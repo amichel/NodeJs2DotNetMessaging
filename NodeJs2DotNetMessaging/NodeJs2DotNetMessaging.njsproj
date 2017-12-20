@@ -29,6 +29,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="bitfinex.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contracts.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

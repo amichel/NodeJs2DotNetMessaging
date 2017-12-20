@@ -4,23 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Win32.SafeHandles;
 using NetMQ;
 using NetMQ.Sockets;
 
-namespace DotNetConsoleClient
+namespace DotNetConsole
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (var socket = new DealerSocket())
+            using (var socket = new RouterSocket())
             {
-                socket.Connect("tcp://127.0.0.1:5560");
-
-                for (int i = 0; i < 10000; i++)
+                socket.Bind("tcp://127.0.0.1:5560");
+                while (true)
                 {
-                    socket.SendFrame(Encoding.UTF8.GetBytes("kkk"));
-                    Thread.Sleep(1000);
+                    string data;
+                    bool more;
+                    if (socket.TryReceiveFrameString(TimeSpan.FromSeconds(5), Encoding.UTF8, out data, out more))
+                        if (!more) Console.WriteLine(data);
                 }
             }
         }
