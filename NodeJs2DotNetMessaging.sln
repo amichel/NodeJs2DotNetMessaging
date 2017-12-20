@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodeJs2DotNetMessaging", "NodeJs2DotNetMessaging\NodeJs2DotNetMessaging.njsproj", "{033AA0FC-2A84-41EF-BE19-C8BC537929A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{033AA0FC-2A84-41EF-BE19-C8BC537929A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033AA0FC-2A84-41EF-BE19-C8BC537929A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033AA0FC-2A84-41EF-BE19-C8BC537929A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033AA0FC-2A84-41EF-BE19-C8BC537929A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6C35CC7-5B3D-420A-9ACB-30EBD46C4777}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+{
+  "name": "node-js2-dot-net-messaging",
+  "version": "0.0.0",
+  "description": "NodeJs2DotNetMessaging",
+  "main": "app.js",
+  "author": {
+    "name": "alex"
+  }
+}
