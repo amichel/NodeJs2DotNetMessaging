@@ -5,5 +5,9 @@
   "main": "app.js",
   "author": {
     "name": "alex"
+  },
+  "dependencies": {
+    "text-encoding": "^0.6.4",
+    "zeromq": "^4.6.0"
   }
 }
